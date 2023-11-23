@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.background-container{
+    background-color: #0b0b0b;
+}
+
+.bulb-image{
+    width: 150px;
+}
+
+.cat-image{
+    width: 300px;
+}
+
+.switch-board{
+    background-color: #7b8794; 
+    width: 300px;
+    height: 150px;
+    padding: 30px;
+    margin: 15px;
+    border-radius: 12px;
+}
+
+#switchStatus{
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+#onButton{
+    color: #ffffff;
+    background-color: #cbd2d9;
+    font-family: 'Roboto';
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#offButton{
+    color: #ffffff;
+    background-color: #e12d39;
+    font-family: 'Roboto';
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
