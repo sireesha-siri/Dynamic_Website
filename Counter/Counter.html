@@ -12,20 +12,18 @@
 
     <link rel="stylesheet" href="Counter.css">
 
-    <script src="Counter.js"></script>
 </head>
 <body>
-    <div class="background-container text-center d-flex flex-column justify-content-center">
+    <div class="bg-container text-center d-flex flex-column justify-content-center">
+        <h1 class="counter-heading">Counter</h1>
+        <p id="counterValue" class="counter-value">0</p>
         <div>
-            <h1 class="counter-heading">Counter</h1>
-            <p class="counter-value" id="counterValue">0</p>
+          <button onClick="onDecrement()" class="button">DECREASE</button>
+          <button onClick="onReset()" class="button">RESET</button>
+          <button onClick="onIncrement()" class="button">INCREASE</button>
         </div>
+      </div>
 
-        <div>
-            <button class="button-style" id="b1"  onClick="onDecrement()">DECREASE</button>
-            <button class="button-style"  onClick="onReset()">RESET</button>
-            <button class="button-style"  onClick="onIncrement()">INCREASE</button>
-        </div>
-    </div>
+      <script src="Counter.js"></script>
 </body>
 </html>

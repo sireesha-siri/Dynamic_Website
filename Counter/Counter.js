@@ -1,38 +1,36 @@
-let counterValue = document.getElementById("counterValue");
-
-function onDecrement(){
-    let previousValue = counterValue.textContent;
-    let updatedValue = parseInt(previousValue) - 1;
-
-    if (updatedValue < 0){
-        counterValue.style.color = 'red';
+let counterElement = document.getElementById("counterValue");
+function onDecrement() {
+    let previousCounterValue = counterElement.textContent;
+    let updatedCounterValue = parseInt(previousCounterValue) - 1;
+    if (updatedCounterValue > 0) {
+        counterElement.style.color = "green";
     }
-    else if (updatedValue > 0){
-        counterValue.style.color = 'green';
+    else if (updatedCounterValue < 0) {
+        counterElement.style.color = "red";
     }
-    else{
-        counterValue.style.color = 'dark';
+    else {
+        counterElement.style.color = "black";
     }
-    counterValue.textContent = updatedValue;
+    counterElement.textContent = updatedCounterValue;
+}
+function onIncrement() {
+    let previousCounterValue = counterElement.textContent;
+    let updatedCounterValue = parseInt(previousCounterValue) + 1;
+    if (updatedCounterValue > 0) {
+        counterElement.style.color = "green";
+    }
+    else if (updatedCounterValue < 0) {
+        counterElement.style.color = "red";
+    }
+    else {
+        counterElement.style.color = "black";
+    }
+    counterElement.textContent = updatedCounterValue;
+}
+function onReset() {
+    let counterValue = 0;
+    counterElement.textContent = counterValue;
+    counterElement.style.color = "black";
 }
 
-function onReset(){
-    counterValue.textContent = 0;
-    counterValue.style.color = 'black'; 
-}
 
-function onIncrement(){
-    let previousValue = counterValue.textContent;
-    let updatedValue = parseInt(previousValue) + 1;
-
-    if (updatedValue < 0){
-        counterValue.style.color = 'red';
-    }
-    else if (updatedValue > 0){
-        counterValue.style.color = 'green';
-    }
-    else{
-        counterValue.style.color = 'dark';
-    }
-    counterValue.textContent = updatedValue;
-}
