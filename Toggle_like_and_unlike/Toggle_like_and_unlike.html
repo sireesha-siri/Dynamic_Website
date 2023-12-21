@@ -3,18 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Toggle like and unlike</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="Seasons-switcher.css">
+    <script src="https://kit.fontawesome.com/d1c2ea8b80.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="Toggle_like_and_unlike.css">
 </head>
 <body>
-    
+    <div>
+        <div class="text-center m-3">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/white-puppy-img.png" class="w-50"
+        id="puppyImage"/>
+        </div>
 
-    <script src="Seasons-switcher.js"></script>
+        <div class="d-flex flex-row justify-content-center mt-5">
+            <i class="fa fa-thumbs-up like-icon" aria-hidden="true" id='likeIcon'></i>
+            <button class="like-button ml-4" id='likeButton' onclick="onClickLikeButton()">
+                Like
+            </button>
+        </div>
+    </div>
+
+    <script src="Toggle_like_and_unlike.js"></script>
 </body>
 </html>
